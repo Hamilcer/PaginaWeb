@@ -1,11 +1,22 @@
+.header{
+    background-color: #020002;
+    padding: 20px;
+}
+
+.header_url{
+    color: aliceblue;
+    text-decoration: none;
+}
+
 h1{
     font-family: 'Comfortaa';  
     font-weight: 600; 
-    font-size: xx-large;
+    font-size: 50px;
     vertical-align: -webkit-baseline-middle;
     line-height: normal;
     color: aliceblue;
     float: left;
+    margin: 104px 10px;
 
 }
 
@@ -13,14 +24,55 @@ h1 strong{
     color: #F5660B;
 }
 
-body{
-    font-family: 'Somatic Rounded';
+h2{
+    font-family: 'Comfortaa';
+    font-weight: 600;
+    font-size: larger;
 }
+
+h3{
+    font-family: 'atami';
+    font-weight: 400;
+    font-size: larger;
+}
+
+h4{
+    font-family: 'atami';
+    font-weight: 300;
+    font-size: small;
+}
+
+body{
+    font-family: 'Futura lt BT';
+    background-color: #F5F5F5;
+    margin: 0;
+}
+
 .hero {
-    height: 500px;
+    height: 383px;
     background-color: #050006;
-    background-image: url('./images/hero.jpg');
-    background-size: 800px 500px;
+    background-image: url('./images/hero3.jpg');
+    background-size: 750px;
     background-repeat: no-repeat;
     background-position-x: right;
 }
+
+.exercise_type{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 15px 15px;
+    padding: 10px;
+}
+.exercise_subtitle{
+    line-height: 0px;
+}
+
+ .exercise_details{
+     width: 668px;
+ }
+
+ .exercise_imagewrapper{
+     width: 668px;
+ }
+
+ 
