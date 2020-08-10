@@ -1,0 +1,26 @@
+h1{
+    font-family: 'Comfortaa';  
+    font-weight: 600; 
+    font-size: xx-large;
+    vertical-align: -webkit-baseline-middle;
+    line-height: normal;
+    color: aliceblue;
+    float: left;
+
+}
+
+h1 strong{
+    color: #F5660B;
+}
+
+body{
+    font-family: 'Somatic Rounded';
+}
+.hero {
+    height: 500px;
+    background-color: #050006;
+    background-image: url('./images/hero.jpg');
+    background-size: 800px 500px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
