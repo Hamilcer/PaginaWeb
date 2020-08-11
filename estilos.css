@@ -1,22 +1,52 @@
 .header{
     background-color: #020002;
-    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.menu {
+    height: inherit;
+  }
+
+.header ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  height: inherit;
+}
+
+.header ol li{
+    height: inherit;
 }
 
 .header_url{
     color: aliceblue;
     text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
 }
+
+figure {
+    margin: 0;
+  }
+
 
 h1{
     font-family: 'Comfortaa';  
     font-weight: 600; 
     font-size: 50px;
     vertical-align: -webkit-baseline-middle;
-    line-height: normal;
     color: aliceblue;
     float: left;
-    margin: 104px 10px;
+    margin: 104px 24px;
+    margin-right: 750px;
 
 }
 
@@ -51,28 +81,57 @@ body{
 .hero {
     height: 383px;
     background-color: #050006;
-    background-image: url('./images/hero3.jpg');
+    background-image: url('./images/hero.jpg');
     background-size: 750px;
     background-repeat: no-repeat;
     background-position-x: right;
 }
 
+.exercise{
+    margin: 20px;
+}
 .exercise_type{
     border: 1px solid black;
     border-radius: 10px;
     margin: 15px 15px;
     padding: 10px;
 }
+
+
 .exercise_subtitle{
-    line-height: 0px;
+    width: 300px;
+    margin: 0;
+
+    /* line-height: 0px; */
 }
 
- .exercise_details{
-     width: 668px;
+.exercise_englishsubtitle{
+    width: 300px;
+    margin: 0;
+    /* width: 100px; */
+}
+
+ .exercise_description{
+     width: 600px;
+     margin: 0;
+
+     /* margin: 0; */
+     /* display: flex; */
+     /* flex-direction: column; */
  }
 
  .exercise_imagewrapper{
-     width: 668px;
+     width: 300px;
  }
+
+ footer{
+     background-color: black;
+     color: aliceblue;
+     display: flex;
+     margin-top: 15px;
+     justify-content: space-between;
+     padding: 0 20px;
+ }
+
 
  
