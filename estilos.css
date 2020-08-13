@@ -89,14 +89,14 @@ h4{
 
 body{
     font-family: 'Futura lt BT';
-    background-color: #f0f0f0;
+    background-color: #f2f2f2;
     margin: 0;
 }
 
 .hero {
     height: 383px;
     background-color: #050006;
-    background-image: url('./images/hero.jpg');
+    background-image: url('./images/hero.png');
     background-size: 750px;
     background-repeat: no-repeat;
     background-position-x: right;
@@ -104,14 +104,15 @@ body{
 
 .exercise{
     margin: 20px;
+    margin-top: 60px;
 }
 
 .exercise_type{
     border: 1px solid black;
-    background-color: #F4F4F4;
-    border-radius: 10px;
+    background-color: white;
+    border-radius: 15px;
     margin: 15px 15px;
-    padding: 40px 20px;
+    padding: 30px 25px;
     display: flex;  
     line-height: 50px;
     /* flex-direction: column; */
@@ -142,7 +143,7 @@ body{
     text-align: center;
     /* line-height: 0; */
     /* margin-left: 100px; */
-    padding-left: 50px;
+    padding-left: 16px;
 }
 
 .musculos h3{
@@ -152,7 +153,7 @@ body{
 
     
 .exercise_imagewrapper{
-        width: 520px;
+        /* width: 520px; */
         margin: 12px 68px;
     }
     
@@ -173,7 +174,7 @@ body{
 }
 
 .video_title{
-    margin-top: 30px;
+    margin-top: 60px;
     margin-bottom: 0;
     margin-left: 20px;
 }
@@ -197,7 +198,7 @@ a{
 } */
 
 .video_details{
-    background-color: #F4F4F4;
+    background-color: whitesmoke;
     padding: 20px;
     color: black;
     flex-wrap: wrap;
@@ -229,15 +230,149 @@ a{
     font-weight: 600;
 }
 
+.contact{
+    /* border: 2px solid red; */
+    background-color: #050006;
+    color: aliceblue;
+    /* margin: 0; */
+    padding: 0px 20px 20px 28.8px;
+    /* height: 300px; */
+    display: flex;
+    /* display: block; */
+    align-items: center;
+    justify-content: space-between;
 
+}
+
+.contact_title{
+    margin: 20px;
+    margin-bottom: 10px;
+}
+
+.social {
+    /* height: 50px; */
+}
+
+.social-link{
+    /* border: 10px solid red; */
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
+    /* padding: 20px; */
+    background-size: 50px 50px;
+    /* background-repeat: no-repeat; */
+}
+
+.social-link.twitter{
+    /* height: 20px;
+    width: 20px; */
+    background-image: url(./images/iconos/twitter.svg);
+    /* background-size: 20px 20px;
+    border: 5px solid red; */
+}
+
+.social-link.facebook{
+    background-image: url(./images/iconos/facebook.svg);
+}
+
+.social-link.github{
+    background-image: url(./images/iconos/github.svg);
+}
+
+.social-link.instagram{
+    background-image: url(./images/iconos/instagram.svg);
+}
+
+.form_email input{
+    border-color: transparent;
+    padding-left: 22px;
+    background-image: url('./images/iconos/envelope.svg');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position-y: center;
+    font-size: small;
+}
+
+.form_email button{
+    display: block;
+    margin-top: 10px;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    font-size: x-small;
+    padding: 5px 10px;
+}
+
+.imc{
+    /* border: 2px solid red; */
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 0 20px;
+    background-color: white;
+    /* padding-bottom: 49px; */
+    /* margin: 15px; */
+    display: block;
+    text-align: center;
+
+}
+
+.imc_content{
+    /* border: 1px solid black;
+    border-radius: 15px; */
+    padding: 0 20px;
+    /* background-color: white; */
+    /* padding-bottom: 49px; */
+    margin: 15px;
+    display: block;
+    color: rgb(59, 59, 59);
+    /* justify-content: block; */
+}
+
+
+.imc_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* text-align: center; */
+}
+
+.imc article p {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.imc input{
+    border: 1px solid #050006;
+    padding: 5px;
+    border-radius: 5px;
+    /* margin: 0 30px; */
+}
+
+
+.resultado {
+    text-align: center;
+}
+
+.imc button{
+    border-color: transparent;
+    /* display: flex; */
+    background-color: transparent;
+    justify-content: center;
+    color: #F5660B;
+    cursor: pointer;
+    margin: 20px 0;
+}
 
  footer{
      background-color: black;
      color: aliceblue;
      display: flex;
-     margin-top: 15px;
      justify-content: space-between;
      padding: 0 20px;
+     margin: 0;
+     font-size: 20px;
     }
     
 

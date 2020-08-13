@@ -51,12 +51,12 @@
             <div class="exercise_details">
                 <h3 class="exercise_subtitle">Flexion de codos</h3>
                 <h4 class="exercise_englishsubtitle">(Push ups)</h4>
-                <p class="exercise_description">La flexión de codos es probablemente el ejercicio mas basicos y reconocido, ya que este te permete desarrollar masa muscular de una manera efectiva usando tu propio peso en cualquier lugar, tambien te permite variar la carga ya que usando un banco o simplemente cambiando tus manos de posicion puedes aumentar o disminuir tu peso y enfocarte en trabajar diferentes musculos. Este ejercicio consiste el poner tus manos y pies en el suelo con los brazos y el cuerpo totalmente estirados, tienes que flexionar los codos para poder bajar hasta tocar el suelo con el pecho y subir de nuevo manteniendo el cuerpo totalmente recto. </p>
+                <p class="exercise_description">La flexión de codos es probablemente el ejercicio mas basicos y reconocido, ya que este te permete desarrollar masa muscular de una manera efectiva usando tu propio peso en cualquier lugar, tambien te permite variar la carga ya que usando un banco o simplemente cambiando tus manos de posicion puedes aumentar o disminuir el peso que levantas y enfocarte en trabajar diferentes musculos. Este ejercicio consiste el poner tus manos y pies en el suelo con los brazos y el cuerpo totalmente extendidos, tienes que flexionar los codos para poder bajar hasta tocar el suelo con el pecho y subir de nuevo manteniendo el cuerpo totalmente recto. </p>
             </div>
             <div class="musculos">
             <h3>Principales musculos trabajados</h3>
             <figure class="exercise_imagewrapper">
-                <img class="exercise_image" src="./images/push3.gif" alt="" width="520">
+                <img class="exercise_image" src="./images/push.gif" alt="" width="520">
             </figure>
             </div>
         </article>
@@ -70,7 +70,7 @@
             <div class="musculos">
             <h3>Principales musculos trabajados</h3>    
             <figure class="exercise_imagewrapper">
-                <img class="exercise_image" src="./images/pull3.gif" alt="" width="520">
+                <img class="exercise_image" src="./images/pull.gif" alt="" width="520">
             </figure>
             </div>
         </article>
@@ -84,7 +84,7 @@
             <div class="musculos">
             <h3>Principales musculos trabajados</h3>    
             <figure class="exercise_imagewrapper">
-                <img class="exercise_image" src="./images/push3.gif" alt="" width="520">
+                <img class="exercise_image" src="./images/push.gif" alt="" width="520">
             </figure>
             </div>
         </article>
@@ -98,7 +98,7 @@
             <div class="musculos">
             <h3>Principales musculos trabajados</h3>    
             <figure class="exercise_imagewrapper">
-                <img class="exercise_image" src="./images/L-sit3.gif" alt="" width="520">
+                <img class="exercise_image" src="./images/L-sit.gif" alt="" width="520">
             </figure>
             </div>
         </article>
@@ -112,7 +112,7 @@
             <div class="musculos">
             <h3>Principales musculos trabajados</h3>    
             <figure class="exercise_imagerapper">
-                <img class="exercise_image" src="./images/squats3.gif" alt="" width="520">
+                <img class="exercise_image" src="./images/squats.gif" alt="" width="520">
             </figure>
             </div>
         </article>
@@ -174,16 +174,28 @@
     </section>
 
 
-    <!-- <section id="imc" class="imc">sección ¿imc?
+    <section id="imc" class="imc">
 
-        <h1>Índice de masa corporal (IMC)</h1>
-        <p>Es un método utilizado para estimar la cantidad de grasa corporal que tiene una persona, y determinar por tanto si el peso está dentro del rango normal, o por el contrario, se tiene sobrepeso o delgadez. Para ello, se pone en relación la estatura y el peso actual del individuo.</p>
-        <p>¿Cual es tu peso?</p>
-        <input type="number" id="peso">
-        <p>¿Cual es tu estatura?</p>
-        <input type="number" id="estatura"><br>
-        <input type="button" value="Saber cual es mi IMC" id="boton">
-        <p id = "r"></p>
+        <h2 class="imc_title">Índice de masa corporal (IMC)</h2>
+
+        <div class="imc_content">
+        <p class="imc_description">No solo es importante saber que ejercicios son importantes dominar, tambien tienes que saber si tienes un peso ideal. El imc es un método utilizado para estimar la cantidad de grasa corporal que tiene una persona, y precisar si tiene un peso normal, o de otro modo si tiene sobrepeso o delgadez.</p>
+        <div class="imc_wrap"> 
+            <article>
+                <p >¿Cual es tu peso?</p>
+                <input class="cola" type="number" id="peso" placeholder="Ejemplo: 80">
+            </article>
+            <article>
+                <p >¿Cual es tu estatura?</p>
+                <input type="number" id="estatura" placeholder="Ejemplo: 1.85"><br>
+            </article>
+
+        </div>
+
+        <div class="resultado">
+        <button id="boton">Saber mi IMC</button>
+        <p id = "r" class="imc_answer"></p>
+        </div>
     
         <script>
             var peso, estatura, ideal;
@@ -202,21 +214,21 @@
     
         if (resultado>=18.5 && resultado<=24.9)
         {
-            r.innerHTML = "Tú ÍMC es " + resultado + " tienes un peso saludable."; 
+            r.innerHTML = "Tú IMC es " + resultado + " tienes un peso saludable."; 
         }
         else if (resultado>24.9)
         {
             ideal = 24.9 * estatura;
             ideal = peso - ideal;
             ideal = ideal.toFixed(2)
-            r.innerHTML = "Tú ÍMC es " + resultado + " tienes que bajar " + ideal + "Kg para tener un peso saludable." ; 
+            r.innerHTML = "Tú IMC es " + resultado + " tienes que bajar " + ideal + "Kg para tener un peso saludable." ; 
         }
         else if (resultado<18.5)
         {
             ideal = 18.5 * estatura;
             ideal = ideal - peso;
             ideal = ideal.toFixed(2)
-            r.innerHTML = "Tú ÍMC es " + resultado + " tienes que subir " + ideal + "Kg para tener un peso saludable." ; 
+            r.innerHTML = "Tú IMC es " + resultado + " tienes que subir " + ideal + "Kg para tener un peso saludable." ; 
         }
     }
     
@@ -224,15 +236,23 @@
         </script>
     
 
-    </section> -->
+    </section>
 
 
     <section id="contacto" class="contact">
-        <h3 class="contact_title">Contactame</h3>
-        <form action="/algo/" class="form_email">
-            <input type="text" placeholder="Dejame tu email">
-            <button>Enviar</button>
+        <!-- <div> -->
+            <form action="" class="form_email">
+                <h3 class="contact_title">Contactame</h3>
+                <input type="text" placeholder="Dejame tu email">
+                <button>Enviar</button>
         </form>
+        <div class="social">
+            <a href="https://twitter.com/themilo124" class="social-link twitter" target="_blanck"></a>
+            <a href="https://www.facebook.com/hamilton.espitia14" class="social-link facebook" target="_blanck"></a>
+            <a href="https://github.com/hamilcer" class="social-link github" target="_blanck"></a>
+            <a href="https://www.instagram.com/hamilton.espitia/" class="social-link instagram" target="_blanck"></a>
+        </div>
+        <!-- </div> -->
     </section>
 
 
