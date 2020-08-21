@@ -2,6 +2,7 @@
     background-color: #020002;
     color: white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     height: 60px;
     align-items: center;
@@ -22,6 +23,11 @@
 .menu {
     height: inherit;
   }
+
+.header p {
+    margin: 0;
+    padding-top: 13px;
+}
 
 .header ol {
   margin: 0;
@@ -89,15 +95,18 @@ body{
 
 .hero {
     background-color: #050006;
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     flex-shrink: 0;
     align-items: center;
+
 }
 
 .exercise{
     margin: 20px;
     margin-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .exercise_type{
@@ -124,7 +133,7 @@ body{
 }
 
  .exercise_description{
-     width: 590px;
+     /* width: 590px; */
      margin: 0;
      line-height: normal;
     }
@@ -342,7 +351,8 @@ body{
     }
 
 .container {
-  width: 1300px;
+  max-width: 1300px;
+  width: 100% ;
   margin: 0 auto;
   display: inherit;
   justify-content: inherit;
@@ -351,7 +361,25 @@ body{
   flex-wrap: inherit;
 }
 
+@media screen and (max-width: 1024px) {
+    body {
+        border: 1px solid red;
+    }
+}
 
+@media screen and (max-width: 768px) {
+    .exercise_type {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 320px) {
+}
 
 
 
