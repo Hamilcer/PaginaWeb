@@ -78,7 +78,7 @@ h2{
 h3{
     font-family: 'atami';
     font-weight: 400;
-    font-size: 1.25em;
+    font-size: 1.24em;
 }
 
 h4{
@@ -95,7 +95,7 @@ body{
 
 .hero {
     background-color: #050006;
-    /* display: flex; */
+    display: flex;
     justify-content: space-between;
     flex-shrink: 0;
     align-items: center;
@@ -125,9 +125,8 @@ body{
 }
 
 .exercise_title {
-    padding-top: 15px;
-    padding-left: 10px;
-    margin-top: 0;
+    padding: 15px 10px;
+    margin: 0;
 }
 
 .exercise_subtitle{
@@ -242,10 +241,11 @@ body{
 
 .social-link{
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 2.5em;
+    height: 2.5em;
     margin: 0 20px;
-    background-size: 50px 50px;
+    background-size: 2.5em;
+    background-repeat: no-repeat;
 }
 
 .social-link.twitter{
@@ -379,6 +379,31 @@ body{
 }
 
 @media screen and (max-width: 1024px) {
+    .hero {
+        /* display: block; */
+        position: relative;
+        height: auto;
+        overflow: hidden;
+        padding: 2em 0;
+        justify-content: center;
+    }
+    
+    .hero h1 {
+        z-index: 1;
+    }
+
+    .hero img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        filter: opacity(.6);
+    } 
+
+
+
 }
 
 @media screen and (max-width: 767px) {
@@ -400,12 +425,16 @@ body{
         justify-content: center;
     }
 
+    .hero h1 {
+    font-size: 2.5em;
+    }
+
     .exercise {
         display: block;
     }
 
     .exercise_title {
-        font-size: 1em;
+        font-size: 1.5em;
     }
     
     .exercise_type {
@@ -425,6 +454,10 @@ body{
         margin-top: 20px;
         margin-bottom: 10px;
         line-height: 25px;
+    }
+
+    .video_title {
+        font-size: 1.5em;
     }
 
     .video_source {
@@ -448,6 +481,16 @@ body{
 }
 
 @media screen and (max-width: 480px) {
+    
+    .hero {
+        padding: 1em 0;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+    
+
     .exercise_type {
         margin: .4em;
         padding: 1em;
@@ -467,23 +510,74 @@ body{
         padding: .4em;
     }
 
+    .contact{
+        border: 1px solid transparent;
+        display: block;
+        text-align: center;
+    }
+
+    .contact button {
+        margin: 1em auto;
+    }
+
+    footer {
+        font-size: 17px;
+    }
+
 }
 
 @media screen and (max-width: 320px) {
+    
+    .hero {
+        padding: .5em 0;
+    }
+
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .exercise_title {
+        font-size: 1.3em;
+        text-align: center;
+    }
+    
     .exercise_type {
         margin: .4em;
         padding: .4em;
         line-height: 40px;
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    .video_title {
+        font-size: 1.3em;
+        text-align: center;
     }
 
     .video_details {
-        font-size: 18px;
+        font-size: 16px;
         padding: 1em 0.5em 2em;
     }
 
     .imc_content {
         font-size: 18px;
+    }
+
+    .contact {
+        padding: 0;
+    }
+
+    .social-link {
+        margin: 0 5px;
+    }
+
+    footer {
+        display: block;
+        border: 1px solid transparent;
+        /* font-size: x-small; */
+    }
+
+    footer p {
+        margin: 5px 0;
     }
 
 
