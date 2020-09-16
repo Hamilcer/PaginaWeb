@@ -1,3 +1,67 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('./fonts/icomoon.eot?lpcnfa');
+    src:  url('./fonts/icomoon.eot?lpcnfa#iefix') format('embedded-opentype'),
+      url('./fonts/icomoon.ttf?lpcnfa') format('truetype'),
+      url('./fonts/icomoon.woff?lpcnfa') format('woff'),
+      url('./fonts/icomoon.svg?lpcnfa#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-menu:before {
+    content: "\e904";
+    color: white;
+  }
+  .icon-instagram:before {
+    content: "\e903";
+    color: white;
+  }
+  .icon-github:before {
+    content: "\e902";
+    color: white;
+  }
+  .icon-twitter:before {
+    content: "\e900";
+    color: white;
+  }
+  .icon-facebook:before {
+    content: "\e901";
+    color: white;
+  }
+
+
+.icon-menu {
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    font-size: 1.3em;
+    top: .2em;
+    left: .2em;
+    z-index: 3;
+    line-height: 40px;
+    text-align: center;
+    display: none;
+}
+
 .header{
     background-color: #020002;
     color: white;
@@ -20,9 +84,23 @@
     align-self: center;
 }
 
-.menu {
-    height: inherit;
+.menu { position: fixed;
+    z-index: 2;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .95);
+    /* height: 100vh; */
+    top: 0;
+    left: -100vw;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
   }
+
+.menu.is-active {
+    left: 0;
+}
 
 .header p {
     margin: 0;
@@ -42,12 +120,13 @@
 }
 
 .header_url{
-    color: aliceblue;
+    color: white;
+    font-size: 2em;
     text-decoration: none;
     height: inherit;
     display: flex;
     align-items: center;
-    padding: 0 15px;
+    padding: 10px;
 }
 
 figure {
@@ -241,16 +320,18 @@ body{
 
 .social-link{
     display: inline-block;
-    width: 2.5em;
-    height: 2.5em;
+    /* width: 2.5em;
+    height: 2.5em; */
     margin: 0 20px;
-    background-size: 2.5em;
+    /* background-size: 2.5em; */
+    font-size: 2.5em;
     background-repeat: no-repeat;
+    text-decoration: none;
 }
 
-.social-link.twitter{
+ /* .social-link.twitter{
     background-image: url(./images/iconos/twitter.svg);
-}
+} 
 
 .social-link.facebook{
     background-image: url(./images/iconos/facebook.svg);
@@ -262,7 +343,7 @@ body{
 
 .social-link.instagram{
     background-image: url(./images/iconos/instagram.svg);
-}
+} */
 
 .form_email input{
     border-color: transparent;
@@ -407,6 +488,10 @@ body{
 }
 
 @media screen and (max-width: 767px) {
+
+    .icon-menu {
+        display: block;
+    }
     .header {
         display: block;
         height: auto;        
@@ -526,7 +611,7 @@ body{
 
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
     
     .hero {
         padding: .5em 0;
@@ -567,7 +652,7 @@ body{
     }
 
     .social-link {
-        margin: 0 5px;
+        margin: 4px 15px;
     }
 
     footer {
@@ -583,6 +668,7 @@ body{
 
 
 }
+
 
 
 
