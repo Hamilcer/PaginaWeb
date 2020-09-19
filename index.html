@@ -16,7 +16,7 @@
 
 <body>
 
-    <i class="icon-menu" id="burgerbutton"></i>
+    <i class="icon-menu" id="burger-button"></i>
 
     <header class="header">
         <div class="container">
@@ -290,10 +290,21 @@
 
     <script>
 
+        const ipad = window.matchMedia ("screen and (max-width: 767px)");
         const menu = document.querySelector (".menu");
-        const burgerbutton = document.querySelector ("#burgerbutton");
+        const burgerButton = document.querySelector ("#burger-button");
 
-        burgerbutton.addEventListener("click", hideShow)
+        ipad.addListener(validation)
+
+        function validation (event) {
+            if (event.matches) {
+                burgerButton.addEventListener("click", hideShow)
+            } else {
+                burgerButton.removeEventListener("click", hideShow)
+            }
+        }
+
+        validation(ipad)
 
         function hideShow () {
             if (menu.classList.contains("is-active")) {
