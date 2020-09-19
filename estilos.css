@@ -495,7 +495,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: .4s;
+        transition: .6s;
       }
     
     .menu.is-active {
